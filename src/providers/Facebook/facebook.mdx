@@ -1,0 +1,55 @@
+---
+name: Facebook
+route: '/facebook'
+menu: Providers
+order: 1
+---
+
+import { Playground, PropsTable } from "docz";
+import { FacebookShare, FacebookCounter, FacebookFullButton } from "./";
+
+# Facebook
+
+Provider component for Facebook social network.
+
+* **Full component**, include styles, share button and counter
+* **Share button**, include only share button without any styles
+* **Share counter**, include only share counter without any styles
+
+## Full component
+
+We're included some styles to component for you and strongly recommend you to use this all-in-one component.
+
+<Playground>
+    <FacebookFullButton />
+</Playground>
+
+### Available props for full component
+
+<PropsTable of={FacebookFullButton} />
+
+If you still want to build your own style or element's structure, please use separated components.
+
+## Share component
+
+This component include only Facebook share button without any styles.
+
+<Playground>
+    <FacebookShare />
+</Playground>
+
+### Share component props
+
+<PropsTable of={FacebookShare} />
+
+## Share counter component
+
+This component include only Facebook share counter without any styles.
+
+<Playground>
+    <FacebookCounter />
+</Playground>
+
+### Share counter component props
+
+<PropsTable of={FacebookCounter} />

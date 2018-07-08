@@ -1,0 +1,13 @@
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+# Set default charset
+[*.{js,jsx,json,css,scss,html}]
+charset = utf-8
+
+[*.{js,jsx,json,css,scss,html}]
+indent_style = space
+indent_size = 2

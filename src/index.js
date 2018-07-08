@@ -10,4 +10,8 @@
  *  social networks. Powered by goodshare.js project.
  */
 
-export { FacebookShare, FacebookCounter } from "./providers/Facebook";
+export {
+  FacebookFullButton,
+  FacebookShare,
+  FacebookCounter
+} from "./providers/Facebook";

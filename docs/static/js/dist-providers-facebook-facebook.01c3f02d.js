@@ -1,10 +1,23 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-  [1],
+  [2],
   {
-    "./src/providers/Facebook/components/counter.js": function(e, t, n) {
+    "./dist/providers/Facebook/components/counter.js": function(e, t, n) {
       "use strict";
+      var o =
+        "function" === typeof Symbol && "symbol" === typeof Symbol.iterator
+          ? function(e) {
+              return typeof e;
+            }
+          : function(e) {
+              return e &&
+                "function" === typeof Symbol &&
+                e.constructor === Symbol &&
+                e !== Symbol.prototype
+                ? "symbol"
+                : typeof e;
+            };
       Object.defineProperty(t, "__esModule", { value: !0 });
-      var o = (function() {
+      var r = (function() {
           function e(e, t) {
             for (var n = 0; n < t.length; n++) {
               var o = t[n];
@@ -26,32 +39,36 @@
               Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
           return (t.default = e), t;
         })(n("./node_modules/react/index.js"));
-      function r(e, t) {
+      function c(e, t) {
         if (!e)
           throw new ReferenceError(
             "this hasn't been initialised - super() hasn't been called"
           );
-        return !t || ("object" !== typeof t && "function" !== typeof t) ? e : t;
+        return !t ||
+          ("object" !== ("undefined" === typeof t ? "undefined" : o(t)) &&
+            "function" !== typeof t)
+          ? e
+          : t;
       }
-      var c = (function(e) {
+      var l = (function(e) {
         function t() {
           var e, n, o;
           !(function(e, t) {
             if (!(e instanceof t))
               throw new TypeError("Cannot call a class as a function");
           })(this, t);
-          for (var a = arguments.length, c = Array(a), l = 0; l < a; l++)
-            c[l] = arguments[l];
+          for (var r = arguments.length, a = Array(r), l = 0; l < r; l++)
+            a[l] = arguments[l];
           return (
-            (n = o = r(
+            (n = o = c(
               this,
               (e = t.__proto__ || Object.getPrototypeOf(t)).call.apply(
                 e,
-                [this].concat(c)
+                [this].concat(a)
               )
             )),
             (o.state = { count: 0 }),
-            r(o, n)
+            c(o, n)
           );
         }
         return (
@@ -59,7 +76,7 @@
             if ("function" !== typeof t && null !== t)
               throw new TypeError(
                 "Super expression must either be null or a function, not " +
-                  typeof t
+                  ("undefined" === typeof t ? "undefined" : o(t))
               );
             (e.prototype = Object.create(t && t.prototype, {
               constructor: {
@@ -74,7 +91,7 @@
                   ? Object.setPrototypeOf(e, t)
                   : (e.__proto__ = t));
           })(t, a.PureComponent),
-          o(t, [
+          r(t, [
             {
               key: "componentDidMount",
               value: function() {
@@ -108,37 +125,26 @@
           t
         );
       })();
-      (c.defaultProps = { url: document.location.href, renderAs: "span" }),
-        (t.default = c),
-        (c.__docgenInfo = {
-          description: "",
-          methods: [],
-          displayName: "FacebookCounter",
-          props: {
-            url: {
-              defaultValue: { value: "document.location.href", computed: !0 },
-              flowType: { name: "string" },
-              required: !0,
-              description: ""
-            },
-            renderAs: {
-              defaultValue: { value: '"span"', computed: !1 },
-              flowType: { name: "string" },
-              required: !0,
-              description: ""
-            },
-            className: {
-              flowType: { name: "string" },
-              required: !1,
-              description: ""
-            }
-          }
-        });
+      (l.defaultProps = { url: document.location.href, renderAs: "span" }),
+        (t.default = l);
     },
-    "./src/providers/Facebook/components/full-button.js": function(e, t, n) {
+    "./dist/providers/Facebook/components/full-button.js": function(e, t, n) {
       "use strict";
+      var o =
+        "function" === typeof Symbol && "symbol" === typeof Symbol.iterator
+          ? function(e) {
+              return typeof e;
+            }
+          : function(e) {
+              return e &&
+                "function" === typeof Symbol &&
+                e.constructor === Symbol &&
+                e !== Symbol.prototype
+                ? "symbol"
+                : typeof e;
+            };
       Object.defineProperty(t, "__esModule", { value: !0 });
-      var o = (function() {
+      var r = (function() {
           function e(e, t) {
             for (var n = 0; n < t.length; n++) {
               var o = t[n];
@@ -160,28 +166,32 @@
               Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
           return (t.default = e), t;
         })(n("./node_modules/react/index.js"));
-      function r(e, t) {
+      function c(e, t) {
         if (!e)
           throw new ReferenceError(
             "this hasn't been initialised - super() hasn't been called"
           );
-        return !t || ("object" !== typeof t && "function" !== typeof t) ? e : t;
+        return !t ||
+          ("object" !== ("undefined" === typeof t ? "undefined" : o(t)) &&
+            "function" !== typeof t)
+          ? e
+          : t;
       }
-      var c = (function(e) {
+      var l = (function(e) {
         function t() {
           var e, n, o;
           !(function(e, t) {
             if (!(e instanceof t))
               throw new TypeError("Cannot call a class as a function");
           })(this, t);
-          for (var a = arguments.length, c = Array(a), l = 0; l < a; l++)
-            c[l] = arguments[l];
+          for (var r = arguments.length, a = Array(r), l = 0; l < r; l++)
+            a[l] = arguments[l];
           return (
-            (n = o = r(
+            (n = o = c(
               this,
               (e = t.__proto__ || Object.getPrototypeOf(t)).call.apply(
                 e,
-                [this].concat(c)
+                [this].concat(a)
               )
             )),
             (o.state = { count: 0 }),
@@ -198,7 +208,7 @@
                 )
               );
             }),
-            r(o, n)
+            c(o, n)
           );
         }
         return (
@@ -206,7 +216,7 @@
             if ("function" !== typeof t && null !== t)
               throw new TypeError(
                 "Super expression must either be null or a function, not " +
-                  typeof t
+                  ("undefined" === typeof t ? "undefined" : o(t))
               );
             (e.prototype = Object.create(t && t.prototype, {
               constructor: {
@@ -221,7 +231,7 @@
                   ? Object.setPrototypeOf(e, t)
                   : (e.__proto__ = t));
           })(t, a.PureComponent),
-          o(t, [
+          r(t, [
             {
               key: "componentDidMount",
               value: function() {
@@ -267,62 +277,31 @@
           t
         );
       })();
-      (c.defaultProps = {
+      (l.defaultProps = {
         title: document.title,
         url: document.location.href,
         buttonName: "Facebook",
         renderAs: "button"
       }),
-        (t.default = c),
-        (c.__docgenInfo = {
-          description: "",
-          methods: [
-            {
-              name: "shareWindowOpen",
-              docblock: null,
-              modifiers: [],
-              params: [{ name: "event", type: { name: "any" } }],
-              returns: null
-            }
-          ],
-          displayName: "FacebookFullButton",
-          props: {
-            title: {
-              defaultValue: { value: "document.title", computed: !0 },
-              flowType: { name: "string" },
-              required: !0,
-              description: ""
-            },
-            url: {
-              defaultValue: { value: "document.location.href", computed: !0 },
-              flowType: { name: "string" },
-              required: !0,
-              description: ""
-            },
-            buttonName: {
-              defaultValue: { value: '"Facebook"', computed: !1 },
-              flowType: { name: "string" },
-              required: !0,
-              description: ""
-            },
-            renderAs: {
-              defaultValue: { value: '"button"', computed: !1 },
-              flowType: { name: "string" },
-              required: !0,
-              description: ""
-            },
-            className: {
-              flowType: { name: "string" },
-              required: !1,
-              description: ""
-            }
-          }
-        });
+        (t.default = l);
     },
-    "./src/providers/Facebook/components/share.js": function(e, t, n) {
+    "./dist/providers/Facebook/components/share.js": function(e, t, n) {
       "use strict";
+      var o =
+        "function" === typeof Symbol && "symbol" === typeof Symbol.iterator
+          ? function(e) {
+              return typeof e;
+            }
+          : function(e) {
+              return e &&
+                "function" === typeof Symbol &&
+                e.constructor === Symbol &&
+                e !== Symbol.prototype
+                ? "symbol"
+                : typeof e;
+            };
       Object.defineProperty(t, "__esModule", { value: !0 });
-      var o = (function() {
+      var r = (function() {
           function e(e, t) {
             for (var n = 0; n < t.length; n++) {
               var o = t[n];
@@ -344,28 +323,32 @@
               Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
           return (t.default = e), t;
         })(n("./node_modules/react/index.js"));
-      function r(e, t) {
+      function c(e, t) {
         if (!e)
           throw new ReferenceError(
             "this hasn't been initialised - super() hasn't been called"
           );
-        return !t || ("object" !== typeof t && "function" !== typeof t) ? e : t;
+        return !t ||
+          ("object" !== ("undefined" === typeof t ? "undefined" : o(t)) &&
+            "function" !== typeof t)
+          ? e
+          : t;
       }
-      var c = (function(e) {
+      var l = (function(e) {
         function t() {
           var e, n, o;
           !(function(e, t) {
             if (!(e instanceof t))
               throw new TypeError("Cannot call a class as a function");
           })(this, t);
-          for (var a = arguments.length, c = Array(a), l = 0; l < a; l++)
-            c[l] = arguments[l];
+          for (var r = arguments.length, a = Array(r), l = 0; l < r; l++)
+            a[l] = arguments[l];
           return (
-            (n = o = r(
+            (n = o = c(
               this,
               (e = t.__proto__ || Object.getPrototypeOf(t)).call.apply(
                 e,
-                [this].concat(c)
+                [this].concat(a)
               )
             )),
             (o.shareWindowOpen = function(e) {
@@ -381,7 +364,7 @@
                 )
               );
             }),
-            r(o, n)
+            c(o, n)
           );
         }
         return (
@@ -389,7 +372,7 @@
             if ("function" !== typeof t && null !== t)
               throw new TypeError(
                 "Super expression must either be null or a function, not " +
-                  typeof t
+                  ("undefined" === typeof t ? "undefined" : o(t))
               );
             (e.prototype = Object.create(t && t.prototype, {
               constructor: {
@@ -404,7 +387,7 @@
                   ? Object.setPrototypeOf(e, t)
                   : (e.__proto__ = t));
           })(t, a.PureComponent),
-          o(t, [
+          r(t, [
             {
               key: "render",
               value: function() {
@@ -421,76 +404,32 @@
           t
         );
       })();
-      (c.defaultProps = {
+      (l.defaultProps = {
         title: document.title,
         url: document.location.href,
         buttonName: "Facebook",
         renderAs: "span"
       }),
-        (t.default = c),
-        (c.__docgenInfo = {
-          description: "",
-          methods: [
-            {
-              name: "shareWindowOpen",
-              docblock: null,
-              modifiers: [],
-              params: [{ name: "event", type: { name: "any" } }],
-              returns: null
-            }
-          ],
-          displayName: "FacebookShare",
-          props: {
-            title: {
-              defaultValue: { value: "document.title", computed: !0 },
-              flowType: { name: "string" },
-              required: !0,
-              description: ""
-            },
-            url: {
-              defaultValue: { value: "document.location.href", computed: !0 },
-              flowType: { name: "string" },
-              required: !0,
-              description: ""
-            },
-            buttonName: {
-              defaultValue: { value: '"Facebook"', computed: !1 },
-              flowType: { name: "string" },
-              required: !0,
-              description: ""
-            },
-            renderAs: {
-              defaultValue: { value: '"span"', computed: !1 },
-              flowType: { name: "string" },
-              required: !0,
-              description: ""
-            },
-            className: {
-              flowType: { name: "string" },
-              required: !1,
-              description: ""
-            }
-          }
-        });
+        (t.default = l);
     },
-    "./src/providers/Facebook/facebook.mdx": function(e, t, n) {
+    "./dist/providers/Facebook/facebook.mdx": function(e, t, n) {
       "use strict";
       Object.defineProperty(t, "__esModule", { value: !0 });
       var o,
-        a = n("./node_modules/react/index.js"),
-        r = (o = a) && o.__esModule ? o : { default: o },
+        r = n("./node_modules/react/index.js"),
+        a = (o = r) && o.__esModule ? o : { default: o },
         c = n("./node_modules/@mdx-js/tag/dist/index.js"),
         l = n("./node_modules/docz/dist/index.m.js"),
-        u = n("./src/providers/Facebook/index.js");
+        u = n("./dist/providers/Facebook/index.js");
       t.default = function(e) {
         var t = e.components;
-        return r.default.createElement(
+        return a.default.createElement(
           c.MDXTag,
           { name: "wrapper", components: t },
-          r.default.createElement(
+          a.default.createElement(
             c.MDXTag,
             { name: "h1", components: t, props: { id: "facebook" } },
-            r.default.createElement(
+            a.default.createElement(
               c.MDXTag,
               {
                 name: "a",
@@ -498,7 +437,7 @@
                 parentName: "h1",
                 props: { "aria-hidden": !0, href: "#facebook" }
               },
-              r.default.createElement(
+              a.default.createElement(
                 c.MDXTag,
                 {
                   name: "span",
@@ -511,38 +450,38 @@
             ),
             "Facebook"
           ),
-          r.default.createElement(
+          a.default.createElement(
             c.MDXTag,
             { name: "p", components: t },
             "Provider component for Facebook social network."
           ),
-          r.default.createElement(
+          a.default.createElement(
             c.MDXTag,
             { name: "ul", components: t },
-            r.default.createElement(
+            a.default.createElement(
               c.MDXTag,
               { name: "li", components: t, parentName: "ul" },
-              r.default.createElement(
+              a.default.createElement(
                 c.MDXTag,
                 { name: "strong", components: t, parentName: "li" },
                 "Full component"
               ),
               ", include styles, share button and counter"
             ),
-            r.default.createElement(
+            a.default.createElement(
               c.MDXTag,
               { name: "li", components: t, parentName: "ul" },
-              r.default.createElement(
+              a.default.createElement(
                 c.MDXTag,
                 { name: "strong", components: t, parentName: "li" },
                 "Share button"
               ),
               ", include only share button without any styles"
             ),
-            r.default.createElement(
+            a.default.createElement(
               c.MDXTag,
               { name: "li", components: t, parentName: "ul" },
-              r.default.createElement(
+              a.default.createElement(
                 c.MDXTag,
                 { name: "strong", components: t, parentName: "li" },
                 "Share counter"
@@ -550,18 +489,22 @@
               ", include only share counter without any styles"
             )
           ),
-          r.default.createElement(
+          a.default.createElement(
             c.MDXTag,
-            { name: "h2", components: t, props: { id: "full-component" } },
-            r.default.createElement(
+            {
+              name: "h2",
+              components: t,
+              props: { id: "full-styled-component" }
+            },
+            a.default.createElement(
               c.MDXTag,
               {
                 name: "a",
                 components: t,
                 parentName: "h2",
-                props: { "aria-hidden": !0, href: "#full-component" }
+                props: { "aria-hidden": !0, href: "#full-styled-component" }
               },
-              r.default.createElement(
+              a.default.createElement(
                 c.MDXTag,
                 {
                   name: "span",
@@ -572,23 +515,23 @@
                 "#"
               )
             ),
-            "Full component"
+            "Full styled component"
           ),
-          r.default.createElement(
+          a.default.createElement(
             c.MDXTag,
             { name: "p", components: t },
-            "We're included some styles to component for you and strongly recommend you to use this all-in-one component."
+            "We're included some awesome styles to component for you and strongly recommend you to use this all-in-one component."
           ),
-          r.default.createElement(
+          a.default.createElement(
             l.Playground,
             {
               __code: function(e) {
                 return (
                   e &&
-                  r.default.createElement(
+                  a.default.createElement(
                     e.pre,
                     { className: "react-prism language-jsx" },
-                    r.default.createElement(
+                    a.default.createElement(
                       "code",
                       null,
                       "<FacebookFullButton />"
@@ -597,16 +540,16 @@
                 );
               }
             },
-            r.default.createElement(u.FacebookFullButton, null)
+            a.default.createElement(u.FacebookFullButton, null)
           ),
-          r.default.createElement(
+          a.default.createElement(
             c.MDXTag,
             {
               name: "h3",
               components: t,
               props: { id: "available-props-for-full-component" }
             },
-            r.default.createElement(
+            a.default.createElement(
               c.MDXTag,
               {
                 name: "a",
@@ -617,7 +560,7 @@
                   href: "#available-props-for-full-component"
                 }
               },
-              r.default.createElement(
+              a.default.createElement(
                 c.MDXTag,
                 {
                   name: "span",
@@ -630,24 +573,28 @@
             ),
             "Available props for full component"
           ),
-          r.default.createElement(l.PropsTable, { of: u.FacebookFullButton }),
-          r.default.createElement(
+          a.default.createElement(l.PropsTable, { of: u.FacebookFullButton }),
+          a.default.createElement(
             c.MDXTag,
             { name: "p", components: t },
             "If you still want to build your own style or element's structure, please use separated components."
           ),
-          r.default.createElement(
+          a.default.createElement(
             c.MDXTag,
-            { name: "h2", components: t, props: { id: "share-component" } },
-            r.default.createElement(
+            {
+              name: "h2",
+              components: t,
+              props: { id: "only-share-component" }
+            },
+            a.default.createElement(
               c.MDXTag,
               {
                 name: "a",
                 components: t,
                 parentName: "h2",
-                props: { "aria-hidden": !0, href: "#share-component" }
+                props: { "aria-hidden": !0, href: "#only-share-component" }
               },
-              r.default.createElement(
+              a.default.createElement(
                 c.MDXTag,
                 {
                   name: "span",
@@ -658,37 +605,37 @@
                 "#"
               )
             ),
-            "Share component"
+            "Only share component"
           ),
-          r.default.createElement(
+          a.default.createElement(
             c.MDXTag,
             { name: "p", components: t },
             "This component include only Facebook share button without any styles."
           ),
-          r.default.createElement(
+          a.default.createElement(
             l.Playground,
             {
               __code: function(e) {
                 return (
                   e &&
-                  r.default.createElement(
+                  a.default.createElement(
                     e.pre,
                     { className: "react-prism language-jsx" },
-                    r.default.createElement("code", null, "<FacebookShare />")
+                    a.default.createElement("code", null, "<FacebookShare />")
                   )
                 );
               }
             },
-            r.default.createElement(u.FacebookShare, null)
+            a.default.createElement(u.FacebookShare, null)
           ),
-          r.default.createElement(
+          a.default.createElement(
             c.MDXTag,
             {
               name: "h3",
               components: t,
               props: { id: "share-component-props" }
             },
-            r.default.createElement(
+            a.default.createElement(
               c.MDXTag,
               {
                 name: "a",
@@ -696,7 +643,7 @@
                 parentName: "h3",
                 props: { "aria-hidden": !0, href: "#share-component-props" }
               },
-              r.default.createElement(
+              a.default.createElement(
                 c.MDXTag,
                 {
                   name: "span",
@@ -709,23 +656,26 @@
             ),
             "Share component props"
           ),
-          r.default.createElement(l.PropsTable, { of: u.FacebookShare }),
-          r.default.createElement(
+          a.default.createElement(l.PropsTable, { of: u.FacebookShare }),
+          a.default.createElement(
             c.MDXTag,
             {
               name: "h2",
               components: t,
-              props: { id: "share-counter-component" }
+              props: { id: "only-share-counter-component" }
             },
-            r.default.createElement(
+            a.default.createElement(
               c.MDXTag,
               {
                 name: "a",
                 components: t,
                 parentName: "h2",
-                props: { "aria-hidden": !0, href: "#share-counter-component" }
+                props: {
+                  "aria-hidden": !0,
+                  href: "#only-share-counter-component"
+                }
               },
-              r.default.createElement(
+              a.default.createElement(
                 c.MDXTag,
                 {
                   name: "span",
@@ -736,37 +686,37 @@
                 "#"
               )
             ),
-            "Share counter component"
+            "Only share counter component"
           ),
-          r.default.createElement(
+          a.default.createElement(
             c.MDXTag,
             { name: "p", components: t },
             "This component include only Facebook share counter without any styles."
           ),
-          r.default.createElement(
+          a.default.createElement(
             l.Playground,
             {
               __code: function(e) {
                 return (
                   e &&
-                  r.default.createElement(
+                  a.default.createElement(
                     e.pre,
                     { className: "react-prism language-jsx" },
-                    r.default.createElement("code", null, "<FacebookCounter />")
+                    a.default.createElement("code", null, "<FacebookCounter />")
                   )
                 );
               }
             },
-            r.default.createElement(u.FacebookCounter, null)
+            a.default.createElement(u.FacebookCounter, null)
           ),
-          r.default.createElement(
+          a.default.createElement(
             c.MDXTag,
             {
               name: "h3",
               components: t,
               props: { id: "share-counter-component-props" }
             },
-            r.default.createElement(
+            a.default.createElement(
               c.MDXTag,
               {
                 name: "a",
@@ -777,7 +727,7 @@
                   href: "#share-counter-component-props"
                 }
               },
-              r.default.createElement(
+              a.default.createElement(
                 c.MDXTag,
                 {
                   name: "span",
@@ -790,40 +740,40 @@
             ),
             "Share counter component props"
           ),
-          r.default.createElement(l.PropsTable, { of: u.FacebookCounter })
+          a.default.createElement(l.PropsTable, { of: u.FacebookCounter })
         );
       };
     },
-    "./src/providers/Facebook/index.js": function(e, t, n) {
+    "./dist/providers/Facebook/index.js": function(e, t, n) {
       "use strict";
       Object.defineProperty(t, "__esModule", { value: !0 }),
         (t.FacebookFullButton = t.FacebookCounter = t.FacebookShare = void 0);
-      var o = n("./src/providers/Facebook/components/share.js");
+      var o = n("./dist/providers/Facebook/components/share.js");
       Object.defineProperty(t, "FacebookShare", {
         enumerable: !0,
         get: function() {
           return c(o).default;
         }
       });
-      var a = n("./src/providers/Facebook/components/counter.js");
+      var r = n("./dist/providers/Facebook/components/counter.js");
       Object.defineProperty(t, "FacebookCounter", {
         enumerable: !0,
         get: function() {
-          return c(a).default;
+          return c(r).default;
         }
       });
-      var r = n("./src/providers/Facebook/components/full-button.js");
+      var a = n("./dist/providers/Facebook/components/full-button.js");
       function c(e) {
         return e && e.__esModule ? e : { default: e };
       }
       Object.defineProperty(t, "FacebookFullButton", {
         enumerable: !0,
         get: function() {
-          return c(r).default;
+          return c(a).default;
         }
       }),
-        n("./src/providers/Facebook/style.css");
+        n("./dist/providers/Facebook/style.css");
     },
-    "./src/providers/Facebook/style.css": function(e, t, n) {}
+    "./dist/providers/Facebook/style.css": function(e, t, n) {}
   }
 ]);

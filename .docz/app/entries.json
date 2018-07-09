@@ -1,9 +1,25 @@
 {
+  "dist/index.mdx": {
+    "name": "About",
+    "order": 1,
+    "route": "/",
+    "id": "01CHYZS8DASM4ADWEMEW8AECHR",
+    "filepath": "dist/index.mdx",
+    "slug": "dist-index",
+    "menu": null,
+    "headings": [
+      {
+        "depth": 1,
+        "slug": "react-goodsharejs-components",
+        "value": "React goodsharejs components"
+      }
+    ]
+  },
   "src/index.mdx": {
     "name": "About",
     "order": 1,
-    "route": "/react-goodshare-components/",
-    "id": "01CHYX90D9BATQG64ZB484ETYZ",
+    "route": "/",
+    "id": "01CHYZS8DBDV2858BEM10B81C8",
     "filepath": "src/index.mdx",
     "slug": "src-index",
     "menu": null,
@@ -15,12 +31,58 @@
       }
     ]
   },
-  "src/providers/Facebook/facebook.mdx": {
+  "dist/providers/Facebook/facebook.mdx": {
     "name": "Facebook",
-    "route": "/react-goodshare-components/facebook",
+    "route": "/facebook",
     "menu": "Providers",
     "order": 1,
-    "id": "01CHYX90DATVWCMYDV5X6S8HQ5",
+    "id": "01CHYZS8DB37PWQKE1E6MY0NXB",
+    "filepath": "dist/providers/Facebook/facebook.mdx",
+    "slug": "dist-providers-facebook-facebook",
+    "headings": [
+      {
+        "depth": 1,
+        "slug": "facebook",
+        "value": "Facebook"
+      },
+      {
+        "depth": 2,
+        "slug": "full-styled-component",
+        "value": "Full styled component"
+      },
+      {
+        "depth": 3,
+        "slug": "available-props-for-full-component",
+        "value": "Available props for full component"
+      },
+      {
+        "depth": 2,
+        "slug": "only-share-component",
+        "value": "Only share component"
+      },
+      {
+        "depth": 3,
+        "slug": "share-component-props",
+        "value": "Share component props"
+      },
+      {
+        "depth": 2,
+        "slug": "only-share-counter-component",
+        "value": "Only share counter component"
+      },
+      {
+        "depth": 3,
+        "slug": "share-counter-component-props",
+        "value": "Share counter component props"
+      }
+    ]
+  },
+  "src/providers/Facebook/facebook.mdx": {
+    "name": "Facebook",
+    "route": "/facebook",
+    "menu": "Providers",
+    "order": 1,
+    "id": "01CHYZS8DC5M8P1P2V34AA7SJJ",
     "filepath": "src/providers/Facebook/facebook.mdx",
     "slug": "src-providers-facebook-facebook",
     "headings": [

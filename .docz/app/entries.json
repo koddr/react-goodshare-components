@@ -1,0 +1,64 @@
+{
+  "src/index.mdx": {
+    "name": "About",
+    "order": 1,
+    "route": "/",
+    "id": "01CJ098MB4S3KZRYDVCKKQYAS9",
+    "filepath": "src/index.mdx",
+    "slug": "src-index",
+    "menu": null,
+    "headings": [
+      {
+        "depth": 1,
+        "slug": "react-goodsharejs-components",
+        "value": "React goodsharejs components"
+      }
+    ]
+  },
+  "src/providers/Facebook/facebook.mdx": {
+    "name": "Facebook",
+    "route": "/facebook",
+    "menu": "Providers",
+    "order": 1,
+    "id": "01CJ098MB6WRA7S4FY4FZHEZNT",
+    "filepath": "src/providers/Facebook/facebook.mdx",
+    "slug": "src-providers-facebook-facebook",
+    "headings": [
+      {
+        "depth": 1,
+        "slug": "facebook",
+        "value": "Facebook"
+      },
+      {
+        "depth": 2,
+        "slug": "full-styled-component",
+        "value": "Full styled component"
+      },
+      {
+        "depth": 3,
+        "slug": "available-props-for-full-component",
+        "value": "Available props for full component"
+      },
+      {
+        "depth": 2,
+        "slug": "only-share-component",
+        "value": "Only share component"
+      },
+      {
+        "depth": 3,
+        "slug": "share-component-props",
+        "value": "Share component props"
+      },
+      {
+        "depth": 2,
+        "slug": "only-share-counter-component",
+        "value": "Only share counter component"
+      },
+      {
+        "depth": 3,
+        "slug": "share-counter-component-props",
+        "value": "Share counter component props"
+      }
+    ]
+  }
+}

@@ -6,7 +6,7 @@
   "proxy": "http://localhost:4000",
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "clearing": "rm -rf ./{dist,docs}",
+    "clearing": "rm -rf ./dist",
     "transpile": "babel src -d dist --copy-files --ignore **/**/*.mdx",
     "docz:dev": "docz dev",
     "docz:build": "docz build",

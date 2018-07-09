@@ -1,11 +1,11 @@
 {
   "vendors.js": "/react-goodshare-components/static/js/vendors.add55a54.js",
   "src-providers-facebook-facebook.css":
-    "/react-goodshare-components/static/css/src-providers-facebook-facebook.8e07ce5f2c52f3e6876d.css",
+    "/react-goodshare-components/static/css/src-providers-facebook-facebook.171de9f1cd150230e1d2.css",
   "src-providers-facebook-facebook.js":
     "/react-goodshare-components/static/js/src-providers-facebook-facebook.62d9ce27.js",
   "dist-providers-facebook-facebook.css":
-    "/react-goodshare-components/static/css/dist-providers-facebook-facebook.8e07ce5f2c52f3e6876d.css",
+    "/react-goodshare-components/static/css/dist-providers-facebook-facebook.171de9f1cd150230e1d2.css",
   "dist-providers-facebook-facebook.js":
     "/react-goodshare-components/static/js/dist-providers-facebook-facebook.01c3f02d.js",
   "src-index.js": "/react-goodshare-components/static/js/src-index.f8dda107.js",
@@ -13,6 +13,6 @@
     "/react-goodshare-components/static/js/dist-index.5f8a0ffc.js",
   "runtime~app.js":
     "/react-goodshare-components/static/js/runtime~app.919b84dc.js",
-  "app.js": "/react-goodshare-components/static/js/app.cb56195f.js",
+  "app.js": "/react-goodshare-components/static/js/app.1f492682.js",
   "index.html": "/react-goodshare-components/index.html"
 }

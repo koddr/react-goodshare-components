@@ -11,6 +11,7 @@ export default {
       primary: "tomato"
     }
   },
+  hashRouter: true,
   plugins: [
     babel(),
     css({

@@ -14,7 +14,7 @@
           name: "About",
           order: 1,
           route: "/",
-          id: "01CHZ1NZXTFBYAAZX9XN9E2WZS",
+          id: "01CJ07PVKKAKJYC84JN6GDXMER",
           filepath: "src/index.mdx",
           slug: "src-index",
           menu: null,
@@ -31,7 +31,7 @@
           route: "/facebook",
           menu: "Providers",
           order: 1,
-          id: "01CHZ1NZXWYZ83XWK521J0716J",
+          id: "01CJ07PVKPKR9Z70YA1Y8VRRC0",
           filepath: "src/providers/Facebook/facebook.mdx",
           slug: "src-providers-facebook-facebook",
           headings: [
@@ -136,7 +136,7 @@
             config: d.default,
             entries: c.default,
             imports: o,
-            hashRouter: !1
+            hashRouter: !0
           });
         };
         (o.default = (0, r.hot)(e)(u)),

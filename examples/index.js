@@ -2,7 +2,7 @@
 import React from "react";
 import { render } from "react-dom";
 // Providers
-import { FacebookFullButton } from "../../src/providers/Facebook";
+import { FacebookFullButton } from "../src/providers/Facebook/index";
 // Checking root element
 const root = document.getElementById("root");
 if (root === null) throw new Error("Error! Root element does not exists");

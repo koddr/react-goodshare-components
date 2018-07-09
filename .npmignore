@@ -1,5 +1,6 @@
 .docz/
 .github/
+docs/
 src/
 examples/
 .babelrc

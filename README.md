@@ -2,7 +2,7 @@
 
 ![npm version](https://badge.fury.io/js/react-goodshare-components.svg) [![react js site](https://img.shields.io/badge/React-16.x_or_newer-blue.svg?style=flat)](https://reactjs.org) [![license](https://img.shields.io/badge/license-MIT-red.svg?style=flat)](https://github.com/koddr/react-goodshare-components/blob/master/LICENSE)
 
-> React.js component for social share. A simple way to share a link on the pages of your website in the most popular (and not so) social networks. Powered by [goodshare.js](https://github.com/koddr/goodshare.js) project.
+> React.js components for social share. A simple way to share a link on the pages of your website in the most popular (and not so) social networks. Powered by [goodshare.js](https://github.com/koddr/goodshare.js) project.
 
 ### Features
 
@@ -10,7 +10,9 @@ React-ready&trade; components, simple install, extensive documentation, develope
 
 Beautiful button design **already included**. Just open documentation, copy-paste and save!
 
-### Full Documentation
+We're using [Flow](https://flow.org/en/): A Static Type Checker for JavaScript.
+
+### Documentation
 
 - [https://react-goodshare-components.netlify.com/](https://react-goodshare-components.netlify.com/)
 
@@ -23,6 +25,19 @@ Beautiful button design **already included**. Just open documentation, copy-past
 
 ```bash
 $ npm i --save react-goodshare-components
+```
+
+## Usage
+
+```js
+// Full component (include styles, share button and counter)
+import { FacebookFullButton } from "react-goodshare-components";
+
+// Only share link (include share link without any styles)
+import { FacebookShare } from "react-goodshare-components";
+
+// Only share counter (include share counter without any styles)
+import { FacebookCounter } from "react-goodshare-components";
 ```
 
 ### Author & maintainers

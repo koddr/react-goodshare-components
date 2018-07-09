@@ -1,7 +1,7 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-  [4],
+  [2],
   {
-    "./dist/index.mdx": function(e, a, n) {
+    "./src/index.mdx": function(e, a, n) {
       "use strict";
       Object.defineProperty(a, "__esModule", { value: !0 });
       var o,

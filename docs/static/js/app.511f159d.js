@@ -1,5 +1,5 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-  [6],
+  [4],
   {
     "./.docz/app/config.json": function(e) {
       e.exports = {
@@ -10,27 +10,11 @@
     },
     "./.docz/app/entries.json": function(e) {
       e.exports = {
-        "dist/index.mdx": {
-          name: "About",
-          order: 1,
-          route: "/",
-          id: "01CHZ0JK77R15X213NABNEGN7J",
-          filepath: "dist/index.mdx",
-          slug: "dist-index",
-          menu: null,
-          headings: [
-            {
-              depth: 1,
-              slug: "react-goodsharejs-components",
-              value: "React goodsharejs components"
-            }
-          ]
-        },
         "src/index.mdx": {
           name: "About",
           order: 1,
           route: "/",
-          id: "01CHZ0JK790E36X372NZ214BQC",
+          id: "01CHZ1NZXTFBYAAZX9XN9E2WZS",
           filepath: "src/index.mdx",
           slug: "src-index",
           menu: null,
@@ -42,54 +26,12 @@
             }
           ]
         },
-        "dist/providers/Facebook/facebook.mdx": {
-          name: "Facebook",
-          route: "/facebook",
-          menu: "Providers",
-          order: 1,
-          id: "01CHZ0JK792AV4P8KAR32NMM1B",
-          filepath: "dist/providers/Facebook/facebook.mdx",
-          slug: "dist-providers-facebook-facebook",
-          headings: [
-            { depth: 1, slug: "facebook", value: "Facebook" },
-            {
-              depth: 2,
-              slug: "full-styled-component",
-              value: "Full styled component"
-            },
-            {
-              depth: 3,
-              slug: "available-props-for-full-component",
-              value: "Available props for full component"
-            },
-            {
-              depth: 2,
-              slug: "only-share-component",
-              value: "Only share component"
-            },
-            {
-              depth: 3,
-              slug: "share-component-props",
-              value: "Share component props"
-            },
-            {
-              depth: 2,
-              slug: "only-share-counter-component",
-              value: "Only share counter component"
-            },
-            {
-              depth: 3,
-              slug: "share-counter-component-props",
-              value: "Share counter component props"
-            }
-          ]
-        },
         "src/providers/Facebook/facebook.mdx": {
           name: "Facebook",
           route: "/facebook",
           menu: "Providers",
           order: 1,
-          id: "01CHZ0JK7A24H516C7YATC67WP",
+          id: "01CHZ1NZXWYZ83XWK521J0716J",
           filepath: "src/providers/Facebook/facebook.mdx",
           slug: "src-providers-facebook-facebook",
           headings: [
@@ -132,19 +74,9 @@
       "use strict";
       Object.defineProperty(o, "__esModule", { value: !0 });
       o.imports = {
-        "dist/index.mdx": function() {
-          return Promise.all([n.e(0), n.e(4)]).then(
-            n.t.bind(null, "./dist/index.mdx", 7)
-          );
-        },
         "src/index.mdx": function() {
-          return Promise.all([n.e(0), n.e(3)]).then(
-            n.t.bind(null, "./src/index.mdx", 7)
-          );
-        },
-        "dist/providers/Facebook/facebook.mdx": function() {
           return Promise.all([n.e(0), n.e(2)]).then(
-            n.t.bind(null, "./dist/providers/Facebook/facebook.mdx", 7)
+            n.t.bind(null, "./src/index.mdx", 7)
           );
         },
         "src/providers/Facebook/facebook.mdx": function() {
@@ -156,17 +88,17 @@
     },
     "./.docz/app/index.jsx": function(e, o, n) {
       "use strict";
-      var t = a(n("./node_modules/react/index.js")),
-        r = a(n("./node_modules/react-dom/index.js")),
+      var t = c(n("./node_modules/react/index.js")),
+        r = c(n("./node_modules/react-dom/index.js")),
         s = n("./.docz/app/imports.js"),
-        d = a(n("./.docz/app/root.jsx"));
-      function a(e) {
+        d = c(n("./.docz/app/root.jsx"));
+      function c(e) {
         return e && e.__esModule ? e : { default: e };
       }
-      var c = [],
-        l = [],
-        u = function() {
-          return l.forEach(function(e) {
+      var a = [],
+        u = [],
+        l = function() {
+          return u.forEach(function(e) {
             return e && e();
           });
         },
@@ -176,13 +108,13 @@
           arguments.length > 0 && void 0 !== arguments[0]
             ? arguments[0]
             : d.default;
-        c.forEach(function(e) {
+        a.forEach(function(e) {
           return e && e();
         }),
           r.default.render(
             t.default.createElement(e, { imports: s.imports }),
             p,
-            u
+            l
           );
       })(d.default);
     },
@@ -190,25 +122,25 @@
       "use strict";
       (function(e) {
         Object.defineProperty(o, "__esModule", { value: !0 });
-        var t = c(n("./node_modules/react/index.js")),
+        var t = a(n("./node_modules/react/index.js")),
           r = n("./node_modules/react-hot-loader/index.js"),
-          s = c(n("./node_modules/docz-theme-default/dist/index.m.js")),
-          d = c(n("./.docz/app/config.json")),
-          a = c(n("./.docz/app/entries.json"));
-        function c(e) {
+          s = a(n("./node_modules/docz-theme-default/dist/index.m.js")),
+          d = a(n("./.docz/app/config.json")),
+          c = a(n("./.docz/app/entries.json"));
+        function a(e) {
           return e && e.__esModule ? e : { default: e };
         }
-        var l = function(e) {
+        var u = function(e) {
           var o = e.imports;
           return t.default.createElement(s.default, {
             config: d.default,
-            entries: a.default,
+            entries: c.default,
             imports: o,
             hashRouter: !1
           });
         };
-        (o.default = (0, r.hot)(e)(l)),
-          (l.__docgenInfo = { description: "", methods: [] });
+        (o.default = (0, r.hot)(e)(u)),
+          (u.__docgenInfo = { description: "", methods: [] });
       }.call(this, n("./node_modules/webpack/buildin/module.js")(e)));
     },
     0: function(e, o, n) {
@@ -216,6 +148,6 @@
         (e.exports = n("./.docz/app/index.jsx"));
     }
   },
-  [[0, 5, 0]],
-  [0, 2, 1, 4, 3]
+  [[0, 3, 0]],
+  [0, 1, 2]
 ]);

@@ -16595,7 +16595,7 @@
                     { value: d },
                     Object(n.createElement)(
                       l,
-                      { basename: "/react-goodshare-components/" },
+                      { basename: "/" },
                       Object(n.createElement)(
                         r,
                         null,

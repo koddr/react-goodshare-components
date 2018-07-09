@@ -43,7 +43,7 @@
                   ({ 1: "src-providers-facebook-facebook", 2: "src-index" }[
                     e
                   ] || e) +
-                  ".7b8ea1d0b572683d4137.css",
+                  ".39244111f3b62ece4c51.css",
                 o = u.p + n,
                 a = document.getElementsByTagName("link"),
                 i = 0;
@@ -170,7 +170,7 @@
     (u.o = function(e, t) {
       return Object.prototype.hasOwnProperty.call(e, t);
     }),
-    (u.p = "/react-goodshare-components/"),
+    (u.p = "/"),
     (u.oe = function(e) {
       throw (console.error(e), e);
     });

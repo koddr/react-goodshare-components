@@ -1,1 +1,25 @@
-.Facebook__theme_default{display:-ms-flexbox;display:flex;font-family:Helvetica,Helvetica Neue,sans-serif;font-weight:lighter;font-size:15px;padding:10px 15px;cursor:pointer;background-color:#3b5998;color:#fff;border:0;border-radius:5px}.Facebook__theme_default:hover{background-color:#3b70af}.Facebook__theme_default .Facebook__share{-ms-flex:1 1 auto;flex:1 1 auto;padding-right:5px}.Facebook__theme_default .Facebook__counter{-ms-flex:0 0 auto;flex:0 0 auto}
+.Facebook__theme_default {
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Helvetica, Helvetica Neue, sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #3b5998;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+}
+.Facebook__theme_default:hover {
+  background-color: #3b70af;
+}
+.Facebook__theme_default .Facebook__share {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding-right: 5px;
+}
+.Facebook__theme_default .Facebook__counter {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}

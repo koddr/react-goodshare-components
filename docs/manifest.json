@@ -1,7 +1,9 @@
 {
   "vendors.js": "/static/js/vendors.86c78431.js",
-  "src-providers-facebook-facebook.css": "/static/css/src-providers-facebook-facebook.a529dfeef641431a50ea.css",
-  "src-providers-facebook-facebook.js": "/static/js/src-providers-facebook-facebook.62d9ce27.js",
+  "src-providers-facebook-facebook.css":
+    "/static/css/src-providers-facebook-facebook.a529dfeef641431a50ea.css",
+  "src-providers-facebook-facebook.js":
+    "/static/js/src-providers-facebook-facebook.62d9ce27.js",
   "src-index.js": "/static/js/src-index.c2771bd7.js",
   "runtime~app.js": "/static/js/runtime~app.d34166ac.js",
   "app.js": "/static/js/app.e4e126e1.js",

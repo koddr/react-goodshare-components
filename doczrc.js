@@ -5,11 +5,6 @@ export default {
   dest: "docs",
   title: "React goodshare.js components",
   description: "Docs about React.js components for social share.",
-  themeConfig: {
-    colors: {
-      primary: "tomato"
-    }
-  },
   hashRouter: true,
   plugins: [
     babel(),

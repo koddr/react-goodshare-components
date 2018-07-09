@@ -4,8 +4,7 @@
     "./.docz/app/config.json": function(e) {
       e.exports = {
         title: "React goodshare.js components",
-        description: "Docs about React.js components for social share.",
-        colors: { primary: "tomato" }
+        description: "Docs about React.js components for social share."
       };
     },
     "./.docz/app/entries.json": function(e) {
@@ -14,7 +13,7 @@
           name: "About",
           order: 1,
           route: "/",
-          id: "01CJ07WEMR0M6MT4PPP346BTY1",
+          id: "01CJ08RS069RSM5689BGCR8RY9",
           filepath: "src/index.mdx",
           slug: "src-index",
           menu: null,
@@ -31,7 +30,7 @@
           route: "/facebook",
           menu: "Providers",
           order: 1,
-          id: "01CJ07WEMS91RQZ3E1B4PY3ZVA",
+          id: "01CJ08RS078EX10CQTJNRN861N",
           filepath: "src/providers/Facebook/facebook.mdx",
           slug: "src-providers-facebook-facebook",
           headings: [

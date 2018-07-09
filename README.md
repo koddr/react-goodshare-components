@@ -12,7 +12,7 @@ Beautiful button design **already included**. Just open documentation, copy-past
 
 ### Full Documentation
 
-- [https://koddr.github.io/react-goodshare-components/](https://koddr.github.io/react-goodshare-components/)
+- [https://react-goodshare-components.netlify.com/](https://react-goodshare-components.netlify.com/)
 
 ### Requirements
 

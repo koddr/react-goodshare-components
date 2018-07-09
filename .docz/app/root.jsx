@@ -10,7 +10,7 @@ const Root = ({ imports }) => (
     config={config}
     entries={entries}
     imports={imports}
-    hashRouter={false}
+    hashRouter={true}
   />
 );
 

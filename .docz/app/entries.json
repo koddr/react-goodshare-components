@@ -2,8 +2,8 @@
   "src/index.mdx": {
     "name": "About",
     "order": 1,
-    "route": "/",
-    "id": "01CHYWZ43KG63EST04ZP7Q46JF",
+    "route": "/react-goodshare-components/",
+    "id": "01CHYX90D9BATQG64ZB484ETYZ",
     "filepath": "src/index.mdx",
     "slug": "src-index",
     "menu": null,
@@ -17,10 +17,10 @@
   },
   "src/providers/Facebook/facebook.mdx": {
     "name": "Facebook",
-    "route": "/facebook",
+    "route": "/react-goodshare-components/facebook",
     "menu": "Providers",
     "order": 1,
-    "id": "01CHYWZ43NXVQ58J4V1SEXNXY2",
+    "id": "01CHYX90DATVWCMYDV5X6S8HQ5",
     "filepath": "src/providers/Facebook/facebook.mdx",
     "slug": "src-providers-facebook-facebook",
     "headings": [

@@ -29,14 +29,17 @@ $ npm i --save react-goodshare-components
 
 ## Usage
 
+Schema for name of React goodshare.js components:
+
+- `<...>FullButton` — full component (include styles, share button and counter)
+- `<...>Share` — only share link (include share link without any styles)
+- `<...>Counter` — only share counter (include share counter without any styles)
+
+For example, Facebook provider:
+
 ```js
-// Full component (include styles, share button and counter)
 import { FacebookFullButton } from "react-goodshare-components";
-
-// Only share link (include share link without any styles)
 import { FacebookShare } from "react-goodshare-components";
-
-// Only share counter (include share counter without any styles)
 import { FacebookCounter } from "react-goodshare-components";
 ```
 

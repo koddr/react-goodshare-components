@@ -1,15 +1,18 @@
 // @flow
 import * as React from "react";
+
 // Define props type
 type FacebookShareCounterProps = {
   url: string,
   renderAs: string
 };
+
 // Define state type
 type FacebookShareCounterState = {
   count: number
 };
-// Provider class
+
+// Facebook Share Counter class
 export default class FacebookShareCounter extends React.PureComponent<
   FacebookShareCounterProps,
   FacebookShareCounterState
@@ -19,11 +22,17 @@ export default class FacebookShareCounter extends React.PureComponent<
     url: document.location.href,
     renderAs: "span"
   };
+
   // Set default state
   state = {
     count: 0
   };
-  // Share counter show function
+
+  /**
+   * Share counter show function.
+   *
+   * @return {object} show share counter
+   */
   componentDidMount() {
     // Fetch counter data
     fetch(
@@ -34,9 +43,11 @@ export default class FacebookShareCounter extends React.PureComponent<
       .then(
         result => {
           // Set state with share counter
-          this.setState({
-            count: parseInt(result.share.share_count)
-          });
+          if (result.share) {
+            this.setState({
+              count: parseInt(result.share.share_count)
+            });
+          }
         },
         error => {
           // Console errors
@@ -44,6 +55,7 @@ export default class FacebookShareCounter extends React.PureComponent<
         }
       );
   }
+
   // Render provider
   render() {
     // Define attributes

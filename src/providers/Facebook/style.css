@@ -1,25 +1,83 @@
-.Facebook__theme_default {
-  display: flex;
+/* Facebook Container */
+
+.Facebook__container {
+  display: inline-flex;
   font-family: Helvetica, "Helvetica Neue", sans-serif;
   font-weight: lighter;
-  font-size: 15px;
-  padding: 10px 15px;
+  font-size: 14px;
+  padding: 8px 12px;
+  margin: 3px;
   cursor: pointer;
-  background-color: #3b5998;
-  color: #ffffff;
-  border: 0;
-  border-radius: 5px;
+  border-radius: 3px;
+}
+
+.Facebook__container .Facebook__share_link {
+  flex: 1 1 auto;
+}
+
+.Facebook__container .Facebook__share_counter {
+  flex: 0 0 auto;
+  margin-left: 6px;
+  padding-left: 6px;
+}
+
+/* Default Facebook theme */
+
+.Facebook__theme_default {
+  background-color: rgb(59, 89, 152);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(59, 89, 152);
 }
 
 .Facebook__theme_default:hover {
-  background-color: #3b70af;
-}
-
-.Facebook__theme_default .Facebook__share_link {
-  flex: 1 1 auto;
-  padding-right: 5px;
+  background-color: rgb(59, 99, 162);
 }
 
 .Facebook__theme_default .Facebook__share_counter {
-  flex: 0 0 auto;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Outlined Facebook theme */
+
+.Facebook__theme_outlined {
+  background-color: rgb(255, 255, 255);
+  color: rgb(59, 89, 152);
+  border: 1px solid rgb(59, 89, 152);
+}
+
+.Facebook__theme_outlined:hover {
+  background-color: rgb(59, 89, 152);
+  color: rgb(255, 255, 255);
+}
+
+.Facebook__theme_outlined .Facebook__share_counter {
+  border-left: 1px solid rgba(59, 89, 152, 0.4);
+}
+
+.Facebook__theme_outlined:hover .Facebook__share_counter {
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Outlined Gradient theme */
+
+.Facebook__theme_gradient {
+  background-image: linear-gradient(
+    to top,
+    rgb(59, 89, 152),
+    rgb(89, 119, 182)
+  );
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(59, 89, 152);
+}
+
+.Facebook__theme_gradient:hover {
+  background-image: linear-gradient(
+    to top,
+    rgb(89, 119, 182),
+    rgb(59, 89, 152)
+  );
+}
+
+.Facebook__theme_gradient .Facebook__share_counter {
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
 }

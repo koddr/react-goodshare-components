@@ -1,5 +1,6 @@
 // @flow
 import * as React from "react";
+
 // Define Facebook props type
 type FacebookShareLinkProps = {
   title: string,
@@ -7,7 +8,8 @@ type FacebookShareLinkProps = {
   buttonName: string,
   renderAs: string
 };
-// Facebook provider class
+
+// Facebook Share Link class
 export default class FacebookShareLink extends React.PureComponent<
   FacebookShareLinkProps
 > {
@@ -18,16 +20,31 @@ export default class FacebookShareLink extends React.PureComponent<
     buttonName: "Facebook",
     renderAs: "span"
   };
-  // Share window open function
+
+  /**
+   * Share window open function.
+   *
+   * @param {any} event
+   * @return {object} open pop-up window
+   */
   shareWindowOpen = (event: any) => {
+    // Prevent default event
     event.preventDefault();
+    // Define window size
+    const width = 640;
+    const height = 320;
+    // Define window position
+    let left = screen.width / 2 - width / 2;
+    let top = screen.height / 2 - height / 2;
+    // Open window
     return window.open(
       // prettier-ignore
       `https://facebook.com/sharer/sharer.php?u=${encodeURIComponent(this.props.url)}&t=${this.props.title}`,
       "Share this",
-      "width=640,height=480,location=no,toolbar=no,menubar=no"
+      `width=${width},height=${height},left=${left},top=${top},location=no,toolbar=no,menubar=no`
     );
   };
+
   // Render provider
   render() {
     // Define attributes

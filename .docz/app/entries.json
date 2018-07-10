@@ -3,7 +3,7 @@
     "name": "About",
     "order": 1,
     "route": "/",
-    "id": "01CJ09ND6CVRVX5AGBX2563TRG",
+    "id": "01CJ1C3Q62DJ1TCABTXS3ANPYE",
     "filepath": "src/index.mdx",
     "slug": "src-index",
     "menu": null,
@@ -12,6 +12,46 @@
         "depth": 1,
         "slug": "react-goodsharejs-components",
         "value": "React goodsharejs components"
+      },
+      {
+        "depth": 2,
+        "slug": "features",
+        "value": "Features"
+      },
+      {
+        "depth": 2,
+        "slug": "requirements",
+        "value": "Requirements"
+      },
+      {
+        "depth": 2,
+        "slug": "install",
+        "value": "Install"
+      },
+      {
+        "depth": 2,
+        "slug": "usage",
+        "value": "Usage"
+      },
+      {
+        "depth": 2,
+        "slug": "author--maintainers",
+        "value": "Author maintainers"
+      },
+      {
+        "depth": 3,
+        "slug": "your-assistance-will-help-make-project-even-better",
+        "value": "Your assistance will help make project even better"
+      },
+      {
+        "depth": 4,
+        "slug": "thanks-for-supporting",
+        "value": "Thanks for supporting"
+      },
+      {
+        "depth": 3,
+        "slug": "license",
+        "value": "License"
       }
     ]
   },
@@ -20,7 +60,7 @@
     "route": "/facebook",
     "menu": "Providers",
     "order": 1,
-    "id": "01CJ09ND6D0HFPBG6N71SKJXSR",
+    "id": "01CJ1C3Q643WYCBPJX38VJSEH6",
     "filepath": "src/providers/Facebook/facebook.mdx",
     "slug": "src-providers-facebook-facebook",
     "headings": [

@@ -35,12 +35,10 @@ Schema for name of React goodshare.js components:
 - `<...>Share` — only share link (include share link without any styles)
 - `<...>Counter` — only share counter (include share counter without any styles)
 
-For example, Facebook provider:
+Where `<...>` is the name of social network or messenger (first letter is capital, of course). For example, if you're want to render Facebook social network all-in-one button (with share link, counter and awesome styles):
 
 ```js
 import { FacebookFullButton } from "react-goodshare-components";
-import { FacebookShare } from "react-goodshare-components";
-import { FacebookCounter } from "react-goodshare-components";
 ```
 
 ### Author & maintainers

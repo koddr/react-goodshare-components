@@ -14,7 +14,7 @@ We're using [Flow](https://flow.org/en/): A Static Type Checker for JavaScript.
 
 ### Documentation
 
-- [https://react-goodshare-components.netlify.com/](https://react-goodshare-components.netlify.com/)
+- [https://react-goodshare-components.netlify.com](https://react-goodshare-components.netlify.com)
 
 ### Requirements
 
@@ -50,7 +50,7 @@ If you want to say «thank you» and/or ask me about `react-goodshare-components
 
 > ### Your assistance will help make project even better!
 >
-> - [Donate with PayPal](https://www.paypal.me/koddr/9.99usd)
+> - [Donate with PayPal or Credit Card](https://www.paypal.me/koddr/9.99usd)
 > - [Donate with Yandex.Money](https://money.yandex.ru/to/41001601525977/599)
 >
 > #### Thanks for supporting!

@@ -6,50 +6,50 @@ order: 1
 ---
 
 import { Playground, PropsTable } from "docz";
-import { FacebookShare, FacebookCounter, FacebookFullButton } from "./";
+import { FacebookButton, FacebookShareLink, FacebookShareCounter } from "./";
 
 # Facebook
 
 Provider component for Facebook social network.
 
-* **Full component**, include styles, share link and counter
-* **Only share link**, include only share link without any styles
-* **Only share counter**, include only share counter without any styles
+* **Full styled component**, include styles, share link and counter
+* **Only share link component**, include only share link without any styles
+* **Only share counter component**, include only share counter without any styles
 
 ## Full styled component
 
-This is all-in-one component. Included some awesome styles, share link and counter. We are strongly recommend you to use it for quick prototyping (or else), instead separated components.
+This is all-in-one solution. Included some awesome styles, brand colors, share link and counter. We are strongly recommend you to use it for quick prototyping (or else), instead separated components.
 
 <Playground>
-    <FacebookFullButton />
+    <FacebookButton />
 </Playground>
 
 ### Available props for full component
 
-<PropsTable of={FacebookFullButton} />
+<PropsTable of={FacebookButton} />
 
 If you still want to build your own style or element's structure, please use separated components.
 
-## Only share component
+## Only share link component
 
 This component include only Facebook share link without any styles (click to `Facebook` word to share this page on your wall).
 
 <Playground>
-    <FacebookShare />
+    <FacebookShareLink />
 </Playground>
 
 ### Share component props
 
-<PropsTable of={FacebookShare} />
+<PropsTable of={FacebookShareLink} />
 
 ## Only share counter component
 
 This component include only Facebook share counter without any styles (for example, share counter of Google Search).
 
 <Playground>
-    <FacebookCounter url="https://google.com" />
+    <FacebookShareCounter url="https://google.com" />
 </Playground>
 
 ### Share counter component props
 
-<PropsTable of={FacebookCounter} />
+<PropsTable of={FacebookShareCounter} />

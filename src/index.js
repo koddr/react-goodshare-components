@@ -11,7 +11,7 @@
  */
 
 export {
-  FacebookFullButton,
-  FacebookShare,
-  FacebookCounter
+  FacebookButton,
+  FacebookShareLink,
+  FacebookShareCounter
 } from "./providers/Facebook";

@@ -15,11 +15,11 @@
   background-color: #3b70af;
 }
 
-.Facebook__theme_default .Facebook__share {
+.Facebook__theme_default .Facebook__share_link {
   flex: 1 1 auto;
   padding-right: 5px;
 }
 
-.Facebook__theme_default .Facebook__counter {
+.Facebook__theme_default .Facebook__share_counter {
   flex: 0 0 auto;
 }

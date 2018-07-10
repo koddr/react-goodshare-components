@@ -1,19 +1,18 @@
 // @flow
 import * as React from "react";
 // Define props type
-type FacebookCounterProps = {
+type FacebookShareCounterProps = {
   url: string,
-  renderAs: string,
-  className?: string
+  renderAs: string
 };
 // Define state type
-type FacebookCounterState = {
+type FacebookShareCounterState = {
   count: number
 };
 // Provider class
-export default class FacebookCounter extends React.PureComponent<
-  FacebookCounterProps,
-  FacebookCounterState
+export default class FacebookShareCounter extends React.PureComponent<
+  FacebookShareCounterProps,
+  FacebookShareCounterState
 > {
   // Set default props
   static defaultProps = {
@@ -49,8 +48,7 @@ export default class FacebookCounter extends React.PureComponent<
   render() {
     // Define attributes
     const Element = this.props.renderAs;
-    const ClassName = this.props.className;
     // Return element
-    return <Element className={ClassName}>{this.state.count}</Element>;
+    return <Element>{this.state.count}</Element>;
   }
 }

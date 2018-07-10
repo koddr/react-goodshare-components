@@ -1,16 +1,15 @@
 // @flow
 import * as React from "react";
 // Define Facebook props type
-type FacebookShareProps = {
+type FacebookShareLinkProps = {
   title: string,
   url: string,
   buttonName: string,
-  renderAs: string,
-  className?: string
+  renderAs: string
 };
 // Facebook provider class
-export default class FacebookShare extends React.PureComponent<
-  FacebookShareProps
+export default class FacebookShareLink extends React.PureComponent<
+  FacebookShareLinkProps
 > {
   // Set default props
   static defaultProps = {
@@ -33,12 +32,9 @@ export default class FacebookShare extends React.PureComponent<
   render() {
     // Define attributes
     const Element = this.props.renderAs;
-    const ClassName = this.props.className;
     // Return element
     return (
-      <Element className={ClassName} onClick={this.shareWindowOpen}>
-        {this.props.buttonName}
-      </Element>
+      <Element onClick={this.shareWindowOpen}>{this.props.buttonName}</Element>
     );
   }
 }

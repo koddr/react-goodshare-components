@@ -1,7 +1,7 @@
 // @flow
 import * as React from "react";
 // Define props type
-type FacebookFullButtonProps = {
+type FacebookButtonProps = {
   title: string,
   url: string,
   buttonName: string,
@@ -9,20 +9,21 @@ type FacebookFullButtonProps = {
   className?: string
 };
 // Define state type
-type FacebookFullButtonState = {
+type FacebookButtonState = {
   count: number
 };
 // Provider class
-export default class FacebookFullButton extends React.PureComponent<
-  FacebookFullButtonProps,
-  FacebookFullButtonState
+export default class FacebookButton extends React.PureComponent<
+  FacebookButtonProps,
+  FacebookButtonState
 > {
   // Set default props
   static defaultProps = {
     title: document.title,
     url: document.location.href,
     buttonName: "Facebook",
-    renderAs: "button"
+    renderAs: "button",
+    className: "Facebook__theme_default"
   };
   // Set default state
   state = {
@@ -64,14 +65,12 @@ export default class FacebookFullButton extends React.PureComponent<
     // Define attributes
     const Element = this.props.renderAs;
     const ButtonName = this.props.buttonName;
+    const ClassName = this.props.className;
     // Return element
     return (
-      <Element
-        className="Facebook__theme_default"
-        onClick={this.shareWindowOpen}
-      >
-        <span className="Facebook__share">{ButtonName}</span>
-        <span className="Facebook__counter">{this.state.count}</span>
+      <Element className={ClassName} onClick={this.shareWindowOpen}>
+        <span className="Facebook__share_link">{ButtonName}</span>
+        <span className="Facebook__share_counter">{this.state.count}</span>
       </Element>
     );
   }

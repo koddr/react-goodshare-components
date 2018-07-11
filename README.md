@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/11155743/42503084-66a22c8a-8440-11e8-9299-a7a859a301ee.png" alt="react-goodshare-components logo"/>
+  <img width="100%" src="https://user-images.githubusercontent.com/11155743/42503084-66a22c8a-8440-11e8-9299-a7a859a301ee.png" alt="react-goodshare-components logo"/>
 </p>
 
 # react-goodshare-components
@@ -43,7 +43,24 @@ Where `<...>` is the name of social network or messenger (first letter is capita
 
 ```js
 import { FacebookButton } from "react-goodshare-components";
+
+<FacebookButton />
 ```
+
+<p align="center">
+  <img width="100%" src="https://user-images.githubusercontent.com/11155743/42575478-4a853652-8529-11e8-8748-a72972d0417c.png" alt="react-goodshare-components facebook"/>
+</p>
+
+```js
+import { FacebookButton } from "react-goodshare-components";
+
+<FacebookButton buttonTheme="outlined" />
+<FacebookButton buttonTheme="gradient" />
+```
+
+<p>
+  <img width="100%" src="https://user-images.githubusercontent.com/11155743/42575425-1a80b40e-8529-11e8-979e-f75802e1bacb.png" alt="react-goodshare-components facebook"/>
+</p>
 
 ### Author & maintainers
 

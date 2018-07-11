@@ -44,7 +44,7 @@ Where `<...>` is the name of social network or messenger (first letter is capita
 ```js
 import { FacebookButton } from "react-goodshare-components";
 
-<FacebookButton />
+<FacebookButton />;
 ```
 
 <p align="center">

@@ -4,7 +4,8 @@ import * as React from "react";
 // Define props type
 type FacebookShareCounterProps = {
   url: string,
-  renderAs: string
+  renderAs: string,
+  className: string
 };
 
 // Define state type
@@ -60,7 +61,8 @@ export default class FacebookShareCounter extends React.PureComponent<
   render() {
     // Define attributes
     const Element = this.props.renderAs;
+    const ClassName = this.props.className;
     // Return element
-    return <Element>{this.state.count}</Element>;
+    return <Element className={ClassName}>{this.state.count}</Element>;
   }
 }

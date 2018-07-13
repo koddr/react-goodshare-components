@@ -1,5 +1,12 @@
 // @flow
 import * as React from "react";
+import { StyleSheet, css } from "aphrodite/no-important";
+
+// Share counter component
+import FacebookShareCounter from "./share-counter";
+
+// CSS-in-JS styles
+import { styles } from "../../../";
 
 // Define props type
 type FacebookButtonProps = {
@@ -29,44 +36,24 @@ export default class FacebookButton extends React.PureComponent<
     renderAs: "button"
   };
 
-  // Set default state
-  state = {
-    count: 0
-  };
-
-  /**
-   * Beautify thousand integer and add `k` or `M` letter.
-   *
-   * @param {number} count
-   * @return {string|number} a integer with or without letter
-   */
-  thousandIntBeautify = (count: number) => {
-    if (count >= 1000 && count < 1000000) {
-      // If count between 1 000 and 1 000 000
-      return `${(count / 1000).toFixed(1)}k`;
-    } else if (count >= 1000000) {
-      // If count more than or equal 1 000 000
-      return `${(count / 1000000).toFixed(2)}M`;
-    }
-    // Default return
-    return count;
-  };
-
   /**
    * Share window open function.
    *
-   * @param {any} event
+   * @param {function} event
    * @return {object} open pop-up window
    */
   shareWindowOpen = (event: any) => {
     // Prevent default event
     event.preventDefault();
+
     // Define window size
     const width = 640;
     const height = 320;
+
     // Define window position
-    let left = screen.width / 2 - width / 2;
-    let top = screen.height / 2 - height / 2;
+    const left = screen.width / 2 - width / 2;
+    const top = screen.height / 2 - height / 2;
+
     // Open window
     return window.open(
       // prettier-ignore
@@ -76,50 +63,75 @@ export default class FacebookButton extends React.PureComponent<
     );
   };
 
-  /**
-   * Share counter show function.
-   *
-   * @return {object} show share counter
-   */
-  componentDidMount() {
-    // Fetch counter data
-    fetch(
-      // prettier-ignore
-      `https://graph.facebook.com/?id=${encodeURIComponent(this.props.url)}`
-    )
-      .then(response => response.json())
-      .then(
-        result => {
-          // Set state with share counter
-          if (result.share) {
-            this.setState({
-              count: parseInt(result.share.share_count)
-            });
-          }
-        },
-        error => {
-          // Console errors
-          console.log(error);
-        }
-      );
-  }
-
   // Render provider
   render() {
     // Define attributes
     const Element = this.props.renderAs;
     const ButtonName = this.props.buttonName;
-    const ButtonTheme = `Facebook__theme_${this.props.buttonTheme}`;
+
+    // Define styles
+    let CONTAINER_BACKGROUND,
+      CONTAINER_BACKGROUND_HOVER,
+      CONTAINER_FONT_COLOR,
+      CONTAINER_FONT_COLOR_HOVER,
+      CONTAINER_BORDER,
+      SHARE_COUNTER_BORDER_LEFT;
+
+    // Define styles
+    switch (this.props.buttonTheme) {
+      case "outlined":
+        CONTAINER_BACKGROUND = "rgb(255, 255, 255)";
+        CONTAINER_BACKGROUND_HOVER = "rgb(59, 89, 152)";
+        CONTAINER_FONT_COLOR = "rgb(59, 89, 152)";
+        CONTAINER_FONT_COLOR_HOVER = "rgb(255, 255, 255)";
+        CONTAINER_BORDER = "1px solid rgb(59, 89, 152)";
+        SHARE_COUNTER_BORDER_LEFT = "1px solid rgba(59, 89, 152, 0.4)";
+        break;
+      case "gradient":
+        CONTAINER_BACKGROUND =
+          "linear-gradient(to top, rgb(59, 89, 152), rgb(89, 119, 182))";
+        CONTAINER_BACKGROUND_HOVER =
+          "linear-gradient(to top, rgb(89, 119, 182), rgb(59, 89, 152))";
+        CONTAINER_FONT_COLOR = "rgb(255, 255, 255)";
+        CONTAINER_FONT_COLOR_HOVER = "rgb(255, 255, 255)";
+        CONTAINER_BORDER = "1px solid rgb(59, 89, 152)";
+        SHARE_COUNTER_BORDER_LEFT = "1px solid rgba(255, 255, 255, 0.4)";
+        break;
+      default:
+        CONTAINER_BACKGROUND = "rgb(59, 89, 152)";
+        CONTAINER_BACKGROUND_HOVER = "rgb(59, 99, 162)";
+        CONTAINER_FONT_COLOR = "rgb(255, 255, 255)";
+        CONTAINER_FONT_COLOR_HOVER = "rgb(255, 255, 255)";
+        CONTAINER_BORDER = "1px solid rgb(59, 89, 152)";
+        SHARE_COUNTER_BORDER_LEFT = "1px solid rgba(255, 255, 255, 0.4)";
+        break;
+    }
+
+    const Theme = StyleSheet.create({
+      container: {
+        background: CONTAINER_BACKGROUND,
+        color: CONTAINER_FONT_COLOR,
+        border: CONTAINER_BORDER,
+        ":hover": {
+          background: CONTAINER_BACKGROUND_HOVER,
+          color: CONTAINER_FONT_COLOR_HOVER
+        }
+      },
+      share_counter: {
+        borderLeft: SHARE_COUNTER_BORDER_LEFT
+      }
+    });
+
     // Return element
     return (
       <Element
-        className={`Facebook__container ${ButtonTheme}`}
+        className={css(styles.container, Theme.container)}
         onClick={this.shareWindowOpen}
       >
-        <span className="Facebook__share_link">{ButtonName}</span>
-        <span className="Facebook__share_counter">
-          {this.thousandIntBeautify(this.state.count)}
-        </span>
+        <span className={css(styles.share_link)}>{ButtonName}</span>
+        <FacebookShareCounter
+          className={css(styles.share_counter, Theme.share_counter)}
+        />
       </Element>
     );
   }

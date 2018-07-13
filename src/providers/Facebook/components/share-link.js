@@ -6,7 +6,8 @@ type FacebookShareLinkProps = {
   title: string,
   url: string,
   buttonName: string,
-  renderAs: string
+  renderAs: string,
+  className: string
 };
 
 // Facebook Share Link class
@@ -24,18 +25,21 @@ export default class FacebookShareLink extends React.PureComponent<
   /**
    * Share window open function.
    *
-   * @param {any} event
+   * @param {function} event
    * @return {object} open pop-up window
    */
   shareWindowOpen = (event: any) => {
     // Prevent default event
     event.preventDefault();
+
     // Define window size
     const width = 640;
     const height = 320;
+
     // Define window position
     let left = screen.width / 2 - width / 2;
     let top = screen.height / 2 - height / 2;
+
     // Open window
     return window.open(
       // prettier-ignore
@@ -49,9 +53,13 @@ export default class FacebookShareLink extends React.PureComponent<
   render() {
     // Define attributes
     const Element = this.props.renderAs;
+    const ClassName = this.props.className;
+
     // Return element
     return (
-      <Element onClick={this.shareWindowOpen}>{this.props.buttonName}</Element>
+      <Element className={ClassName} onClick={this.shareWindowOpen}>
+        {this.props.buttonName}
+      </Element>
     );
   }
 }

@@ -13,10 +13,10 @@
 import { StyleSheet } from "aphrodite/no-important";
 
 // Export components styles
-export const styles = StyleSheet.create({
+export const Styles = StyleSheet.create({
   container: {
     display: "inline-flex",
-    fontFamily: ["Helvetica", "Helvetica Neue", "sans-serif"],
+    fontFamily: ["Helvetica", "Helvetica Neue", "Arial", "sans-serif"],
     fontWeight: "lighter",
     fontSize: 14,
     padding: "8px 12px",

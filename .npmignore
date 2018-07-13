@@ -8,5 +8,4 @@ examples/
 .gitignore
 .prettierignore
 doczrc.js
-postcss.config.js
 webpack.config.js

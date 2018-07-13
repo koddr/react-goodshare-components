@@ -6,7 +6,7 @@ import { StyleSheet, css } from "aphrodite/no-important";
 import FacebookShareCounter from "./share-counter";
 
 // CSS-in-JS styles
-import { styles } from "../../../";
+import { Styles } from "../../../";
 
 // Define props type
 type FacebookButtonProps = {
@@ -125,12 +125,12 @@ export default class FacebookButton extends React.PureComponent<
     // Return element
     return (
       <Element
-        className={css(styles.container, Theme.container)}
+        className={css(Styles.container, Theme.container)}
         onClick={this.shareWindowOpen}
       >
-        <span className={css(styles.share_link)}>{ButtonName}</span>
+        <span className={css(Styles.share_link)}>{ButtonName}</span>
         <FacebookShareCounter
-          className={css(styles.share_counter, Theme.share_counter)}
+          className={css(Styles.share_counter, Theme.share_counter)}
         />
       </Element>
     );

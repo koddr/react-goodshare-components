@@ -3,7 +3,7 @@
  *  Copyright (c) 2018 True web artisans https://webartisans.org
  *  http://opensource.org/licenses/MIT The MIT License (MIT)
  *
- *  react-goodshare-components v0.2.0 at 13/07/2018
+ *  react-goodshare-components v0.2.1 at 14/07/2018
  *
  *  React.js components for social share. A simple way to share a link
  *  on the pages of your website in the most popular (and not so)

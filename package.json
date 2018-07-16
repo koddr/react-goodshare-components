@@ -1,16 +1,16 @@
 {
   "name": "react-goodshare-components",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "React.js components for social share. A simple way to share a link on the pages of your website in the most popular (and not so) social networks. Powered by goodshare.js project.",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "proxy": "http://localhost:4000",
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "clearing": "rm -rf ./dist",
-    "transpile": "babel src -d dist --copy-files --ignore **/**/*.mdx",
+    "clearing": "rm -rf ./lib",
+    "transpile": "babel src -d lib --copy-files --ignore **/**/*.mdx",
     "docz:dev": "docz dev",
     "docz:build": "docz build",
-    "build": "npm run clearing && npm run transpile && npm run docz:build && webpack --mode production"
+    "build": "npm run clearing && webpack --mode production"
   },
   "repository": {
     "type": "git",

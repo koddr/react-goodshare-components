@@ -2,7 +2,7 @@
   <img width="100%" src="https://user-images.githubusercontent.com/11155743/42503084-66a22c8a-8440-11e8-9299-a7a859a301ee.png" alt="react-goodshare-components logo"/>
 </p>
 
-# react-goodshare-components [WIP]
+# react-goodshare-components [WIP, [you can help](https://www.tinkoff.ru/sl/66oTDPEttx9) now!]
 
 ![npm version](https://badge.fury.io/js/react-goodshare-components.svg) [![react js site](https://img.shields.io/badge/React-16.x_or_newer-blue.svg?style=flat)](https://reactjs.org) [![license](https://img.shields.io/badge/license-MIT-red.svg?style=flat)](https://github.com/koddr/react-goodshare-components/blob/master/LICENSE)
 

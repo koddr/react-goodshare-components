@@ -6,7 +6,7 @@
 
 ![npm version](https://badge.fury.io/js/react-goodshare-components.svg) [![react js site](https://img.shields.io/badge/React-16.x_or_newer-blue.svg?style=flat)](https://reactjs.org) [![license](https://img.shields.io/badge/license-MIT-red.svg?style=flat)](https://github.com/koddr/react-goodshare-components/blob/master/LICENSE)
 
-> React.js components for social share. A simple way to share a link on the pages of your website in the most popular (and not so) social networks. Powered by [goodshare.js](https://github.com/koddr/goodshare.js) project. [WIP, [you can help](https://www.tinkoff.ru/sl/66oTDPEttx9) now!]
+> React.js components for social share. A simple way to share a link on the pages of your website in the most popular (and not so) social networks. Powered by [goodshare.js](https://github.com/koddr/goodshare.js) project.
 
 ### Features
 
@@ -62,22 +62,16 @@ import { FacebookButton } from "react-goodshare-components";
   <img width="100%" src="https://user-images.githubusercontent.com/11155743/42575425-1a80b40e-8529-11e8-979e-f75802e1bacb.png" alt="react-goodshare-components facebook"/>
 </p>
 
-### Author & maintainers
+## Author & maintainers
 
 Development and maintenance engaged by [Vic Shóstak](https://github.com/koddr) (aka Koddr).
-If you want to say «thank you» and/or ask me about `react-goodshare-components` — [create new issue](https://github.com/koddr/react-goodshare-components/issues/new).
 
----
+If you want to say «thank you» or/and support active development `react-goodshare-components` — become a Patron!
 
-> ### Your assistance will help make project even better!
->
-> - [Donate with PayPal or Credit Card](https://www.paypal.me/koddr/9.99usd)
-> - [Donate with Yandex.Money](https://money.yandex.ru/to/41001601525977/599)
->
-> #### Thanks for supporting!
+<a href="https://www.patreon.com/bePatron?u=20124951">
+  <img width="200px" src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" alt="Become a Patron!"/>
+</a>
 
----
+## License
 
-### License
-
-[The MIT License (MIT)](https://github.com/koddr/react-goodshare-components/blob/master/LICENSE)
+MIT
